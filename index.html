@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="currency">
+      <h1 class="currency__title">Hello, you can know about value of sum in other currency</h1>
+
+      <div class="currency__wrapper">
+        <form method="post" class="form">
+          <input class="form__input" type="number" placeholder="Write amount of your money">
+          <select class="form__select">
+            <option selected disabled hidden>Choose one of the option</option>
+            <option value="usd">Dollar</option>
+            <option value="euro">Euro</option>
+            <option value="rub">Rubl</option>
+          </select>
+  
+          <button class="form__button" type="submit">Start!</button>
+        </form>
+
+        <div class="currency__text">
+          <span class="text">Your result:</span>
+          <span class="form__result"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
